@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(),OnItemClickListener {
 
     fun getAdRankList(): ArrayList<AdRankInfo> {
         var adRankList = ArrayList<AdRankInfo>()
-        for (i in 0 .. 10) {
+        for (i in 0 .. 50) {
             var item = AdRankInfo()
             item.title = "创意名称$i"
             item.totalPayOrderCount = 100 + 100 * i
