@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mLlAdRankTitleCell"
+    android:layout_width="@dimen/dp_316"
+    android:layout_height="@dimen/dp_78"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/mTvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_28"
+        android:textColor="@color/color_666666"
+        tools:text="成交金额"/>
+
+    <ImageView
+        android:id="@+id/mIvOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        tools:src="@mipmap/ic_down_sort"/>
+
+</LinearLayout>

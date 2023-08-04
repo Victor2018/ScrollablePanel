@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/guest_layout"
+    android:layout_width="@dimen/dp_316"
+    android:layout_height="@dimen/dp_84"
+    android:gravity="center"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/mTvAmountPrefix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mTvAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mTvAmount"
+        android:gravity="end"
+        android:textSize="@dimen/dp_20"
+        android:textColor="@color/color_333333"
+        android:text="¥"/>
+
+    <TextView
+        android:id="@+id/mTvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mTvAmountPrefix"
+        app:layout_constraintEnd_toStartOf="@+id/mTvAmountUnit"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/dp_28"
+        android:textColor="@color/color_333333"
+        android:text="8,000.00"/>
+
+    <TextView
+        android:id="@+id/mTvAmountUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mTvAmount"
+        app:layout_constraintStart_toEndOf="@+id/mTvAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/dp_20"
+        android:textColor="@color/color_333333"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/color_F5F5F5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
